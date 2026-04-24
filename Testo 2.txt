@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle, #ff4d6d, #b3003c);
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+}
+
+.message {
+  max-width: 500px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+#timer {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* cuori floating */
+.floating-heart {
+  position: fixed;
+  bottom: -10px;
+  font-size: 20px;
+  animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
